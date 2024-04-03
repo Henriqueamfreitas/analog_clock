@@ -1,0 +1,112 @@
+/* Layout */
+body{
+    background-color: var(--color-primary);
+    transition: .25s;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 98.1vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.clockbox,
+#clock {
+    width: 100%;
+}
+
+/* Clock styles */
+.circle {
+    /* Cor de fundo do relógio */
+    fill: none;
+    /* cor dar borda */
+    stroke: var(--color-secondary);
+    /* largura da borda do relógio */
+    stroke-width: 9;
+    /* alargamento máximo */
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    /* Cor de fundo do círculo do meio do relógio */
+    fill: var(--color-secondary);
+}
+
+.hour-marks {
+    fill: none;
+    /* cor dos pontinhos de hora  */
+    stroke: var(--color-secondary);
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: var(--color-secondary);
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: var(--color-secondary);
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: var(--color-red);
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Caixa transparente que certifica-se que os ponteiros estão corretamente centralizados*/
+.sizing-box {
+    fill: none;
+}
+
+/* Faz com que os ponteiros caminhem ao redor do mesmo ponto central */
+/* Opcional: Use transition para criar animação */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+}
+
+h2{
+    color: var(--color-secondary);
+    margin: 0;
+    padding: 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+p{
+    color: var(--color-secondary);
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+button{
+    padding: .5rem 1rem;
+    border: solid .0625rem var(--color-secondary);
+    color: var(--color-secondary);
+    background-color: transparent;
+    border-radius: .5rem;
+    transition: .5s;
+    cursor: pointer;
+    position: absolute;
+    right: 8rem;
+    top: 5rem;
+}
+
+button:hover{
+    transition: .5s;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
