@@ -4,6 +4,14 @@ body{
     transition: .25s;
 }
 
+.button__div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -100,9 +108,9 @@ button{
     border-radius: .5rem;
     transition: .5s;
     cursor: pointer;
-    position: absolute;
+    /* position: absolute;
     right: 8rem;
-    top: 5rem;
+    top: 5rem; */
 }
 
 button:hover{
